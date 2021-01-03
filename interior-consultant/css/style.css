@@ -141,3 +141,15 @@ header .container .menu a .active {
   letter-spacing: 0.1rem;
   line-height: 2rem;
 }
+
+footer {
+  margin-top: 1rem;
+}
+footer p {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #a9a9a9;
+}

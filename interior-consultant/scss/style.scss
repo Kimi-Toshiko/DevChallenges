@@ -71,6 +71,12 @@
 //         }
 //     }
 // }
+// footer {
+//     background-color: deeppink;
+//     p {
+//         background-color: deepskyblue;
+//     }
+// }
 
 
 
@@ -240,5 +246,18 @@ header {
             letter-spacing: .1rem;
             line-height: 2rem;
         }
+    }
+}
+
+footer {
+    margin-top: 1rem;
+
+    p {
+        color: $light;
+        text-align: center;
+        font-family: $sans-serif-font;
+        font-weight: $sans-serif-semi-bold;
+        font-size: 1rem;
+        color: #a9a9a9;
     }
 }
