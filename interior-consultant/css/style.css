@@ -90,3 +90,54 @@ header .container .menu a .active {
   width: 100%;
   height: auto;
 }
+
+.creator {
+  width: 40%;
+  height: 15rem;
+  margin: 0 0 0 60%;
+  position: relative;
+  right: 5%;
+  top: -5rem;
+  padding-top: 1rem;
+  background-color: #181719;
+}
+.creator .profile-info {
+  display: flex;
+  flex-direction: row;
+  width: 88%;
+  margin: 0 auto;
+}
+.creator .profile-info .profile-pic {
+  width: 15%;
+}
+.creator .profile-info .profile-pic img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+.creator .profile-info .personal-info {
+  margin-left: 1rem;
+  align-self: center;
+}
+.creator .profile-info .personal-info h3 {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0.6rem;
+}
+.creator .profile-info .personal-info p {
+  color: #797979;
+  font-family: "Montserrat", sans-serif;
+}
+.creator .post {
+  width: 88%;
+  margin: 2rem auto 0 auto;
+}
+.creator .post p {
+  width: 60%;
+  color: #ffffff;
+  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+}
