@@ -1,4 +1,83 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,900;1,400&family=Montserrat:wght@300;400;500;600&display=swap");
+header {
+  background-color: aqua;
+}
+header .header {
+  background-color: blanchedalmond;
+}
+header .header h1 {
+  background-color: brown;
+}
+header .container {
+  background-color: chocolate;
+}
+header .container .menu {
+  background-color: cornflowerblue;
+}
+header .container .menu .item {
+  background-color: crimson;
+}
+
+.main-info {
+  background-color: blue;
+}
+.main-info .info {
+  background-color: brown;
+}
+.main-info .info h2 {
+  background-color: chartreuse;
+}
+.main-info .info p {
+  background-color: chocolate;
+}
+.main-info .info a {
+  background-color: crimson;
+}
+.main-info .info a span {
+  background-color: cyan;
+}
+.main-info .info a i {
+  background-color: darkgoldenrod;
+}
+.main-info .interior {
+  background-color: cadetblue;
+}
+.main-info .interior img {
+  background-color: darkgreen;
+}
+
+.creator {
+  background-color: darkolivegreen;
+}
+.creator .profile-info {
+  background-color: darkorange;
+}
+.creator .profile-info .profile-pic {
+  background-color: darkred;
+}
+.creator .profile-info .personal-info {
+  background-color: darksalmon;
+}
+.creator .profile-info .personal-info h3 {
+  background-color: darkseagreen;
+}
+.creator .profile-info .personal-info p {
+  background-color: darkslateblue;
+}
+.creator .post {
+  background-color: darkorchid;
+}
+.creator .post p {
+  background-color: darkslategray;
+}
+
+footer {
+  background-color: deeppink;
+}
+footer p {
+  background-color: deepskyblue;
+}
+
 html {
   font-size: 16px;
 }
@@ -9,7 +88,6 @@ body {
 }
 
 header {
-  color: #ffffff;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -19,10 +97,13 @@ header .header {
   border: 1px solid #ffffff;
 }
 header .header h1 {
+  color: #ffffff;
   font-family: "Merriweather", serif;
   font-weight: 300;
+  text-transform: uppercase;
 }
 header .container {
+  color: #ffffff;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   align-self: center;
@@ -66,12 +147,13 @@ header .container .menu a .active {
 .main-info .info h2 {
   color: #ffffff;
   font-family: "Merriweather", serif;
+  font-weight: 400;
   font-size: 3rem;
   margin-bottom: 3rem;
 }
 .main-info .info p {
-  font-family: "Montserrat", sans-serif;
   color: #ffffff;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
@@ -118,15 +200,15 @@ header .container .menu a .active {
 .creator .profile-info .personal-info {
   margin-left: 1rem;
   align-self: center;
-}
-.creator .profile-info .personal-info h3 {
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.creator .profile-info .personal-info h3 {
   margin-bottom: 0.6rem;
 }
 .creator .profile-info .personal-info p {
   color: #797979;
-  font-family: "Montserrat", sans-serif;
 }
 .creator .post {
   width: 88%;
@@ -136,8 +218,8 @@ header .container .menu a .active {
   width: 60%;
   color: #ffffff;
   font-family: "Merriweather", serif;
-  font-size: 1.5rem;
   font-weight: 900;
+  font-size: 1.5rem;
   letter-spacing: 0.1rem;
   line-height: 2rem;
 }
@@ -147,9 +229,9 @@ footer {
 }
 footer p {
   color: #ffffff;
-  text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
+  text-align: center;
   font-size: 1rem;
   color: #a9a9a9;
 }

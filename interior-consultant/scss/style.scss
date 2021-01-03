@@ -1,87 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,900;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
 @import "vars";
-
-//BACKGROUND COLORS
-// header {
-//     background-color: aqua;
-//     .header {
-//         background-color: blanchedalmond;
-//         h1 {
-//             background-color: brown;
-//         }
-//     }
-//     .container {
-//         background-color: chocolate;
-//         .menu {
-//             background-color: cornflowerblue;
-//             .item {
-//                 background-color: crimson;
-//             }
-//         }
-//     }
-// }
-// .main-info {
-//     background-color: blue;
-//     .info {
-//         background-color: brown;
-//         h2 {
-//             background-color: chartreuse;
-//         }
-//         p {
-//             background-color: chocolate;
-//         }
-//         a {
-//             background-color: crimson;
-//             span {
-//                 background-color: cyan;
-//             }
-//             i {
-//                 background-color: darkgoldenrod;
-//             }
-//         }
-//     }
-//     .interior {
-//         background-color: cadetblue;
-//         img {
-//             background-color: darkgreen;
-//         }
-//     }
-// }
-// .creator {
-//     background-color: darkolivegreen;
-//     .profile-info {
-//         background-color: darkorange;
-//         .profile-pic {
-//             background-color: darkred;
-//         }
-//         .personal-info {
-//             background-color: darksalmon;
-//             h3 {
-//                 background-color: darkseagreen;
-//             }
-//             p {
-//                 background-color: darkslateblue;
-//             }
-//         }
-//     }
-//     .post {
-//         background-color: darkorchid;
-//         p {
-//             background-color: darkslategray;
-//         }
-//     }
-// }
-// footer {
-//     background-color: deeppink;
-//     p {
-//         background-color: deepskyblue;
-//     }
-// }
-
-
-
-
-
+@import "mixins";
+@import "backgrounds";
 
 html {
     font-size: 16px;
@@ -93,7 +13,6 @@ body {
 }
 
 header {
-    color: $light;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -103,14 +22,13 @@ header {
         border: 1px solid $light;
 
         h1 {
-            font-family: $serif-font;
-            font-weight: $serif-light;
+            @include font-settings ($light, $serif-font, $serif-light);
+            text-transform: uppercase
         }
     }
 
     .container {
-        font-family: $sans-serif-font;
-        font-weight: $sans-serif-regular;
+        @include font-settings ($light, $sans-serif-font, $sans-serif-regular);
         align-self: center;
 
         .menu {
@@ -157,16 +75,13 @@ header {
         margin-right: 4%;
 
         h2 {
-            color: $light;
-            font-family: $serif-font;
+            @include font-settings ($light, $serif-font, $serif-regular);
             font-size: 3rem;
             margin-bottom: 3rem;
         }
 
         p {
-            font-family: $sans-serif-font;
-            color: $light;
-            font-weight: $sans-serif-light;
+            @include font-settings ($light, $sans-serif-font, $sans-serif-light);
             font-size: 1.5rem;
             letter-spacing: .1rem;
             line-height: 2rem;
@@ -219,16 +134,14 @@ header {
         .personal-info {
             margin-left: 1rem;
             align-self: center;
+            @include font-settings ($light, $sans-serif-font, $sans-serif-regular);
 
             h3 {
-                color: $light;
-                font-family: $sans-serif-font;
                 margin-bottom: .6rem;
             }
 
             p {
                 color: #797979;
-                font-family: $sans-serif-font;
             }
         }
     }
@@ -239,10 +152,8 @@ header {
         
         p {
             width: 60%;
-            color: $light;
-            font-family: $serif-font;
+            @include font-settings ($light, $serif-font, $serif-black);
             font-size: 1.5rem;
-            font-weight: $serif-black;
             letter-spacing: .1rem;
             line-height: 2rem;
         }
@@ -253,11 +164,11 @@ footer {
     margin-top: 1rem;
 
     p {
-        color: $light;
+        @include font-settings ($light, $sans-serif-font, $sans-serif-semi-bold);
         text-align: center;
-        font-family: $sans-serif-font;
-        font-weight: $sans-serif-semi-bold;
         font-size: 1rem;
         color: #a9a9a9;
     }
 }
+
+@import "responsive";
