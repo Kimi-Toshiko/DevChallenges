@@ -1,0 +1,78 @@
+header {
+    background-color: aqua;
+    .header {
+        background-color: blanchedalmond;
+        h1 {
+            background-color: brown;
+        }
+    }
+    .container {
+        background-color: chocolate;
+        .hambuerger {
+            background-color: blueviolet;
+        }
+        .menu {
+            background-color: cornflowerblue;
+            .item {
+                background-color: crimson;
+            }
+        }
+    }
+}
+.main-info {
+    background-color: blue;
+    .info {
+        background-color: brown;
+        h2 {
+            background-color: chartreuse;
+        }
+        p {
+            background-color: chocolate;
+        }
+        a {
+            background-color: crimson;
+            span {
+                background-color: cyan;
+            }
+            i {
+                background-color: darkgoldenrod;
+            }
+        }
+    }
+    .interior {
+        background-color: cadetblue;
+        img {
+            background-color: darkgreen;
+        }
+    }
+}
+.creator {
+    background-color: darkolivegreen;
+    .profile-info {
+        background-color: darkorange;
+        .profile-pic {
+            background-color: darkred;
+        }
+        .personal-info {
+            background-color: darksalmon;
+            h3 {
+                background-color: darkseagreen;
+            }
+            p {
+                background-color: darkslateblue;
+            }
+        }
+    }
+    .post {
+        background-color: darkorchid;
+        p {
+            background-color: darkslategray;
+        }
+    }
+}
+footer {
+    background-color: deeppink;
+    p {
+        background-color: deepskyblue;
+    }
+}

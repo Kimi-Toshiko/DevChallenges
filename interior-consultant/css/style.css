@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,900;1,400&family=Montserrat:wght@300;400;500;600&display=swap");
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #181719;
+  padding: 2.5rem 5rem;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header .header {
+  padding: 0.8rem;
+  border: 1px solid #ffffff;
+}
+header .header h1 {
+  color: #ffffff;
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+header .container {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  align-self: center;
+}
+header .container .hamburger {
+  cursor: pointer;
+  display: none;
+  width: 3.6rem;
+  height: 2rem;
+  align-self: center;
+}
+header .container .hamburger div {
+  background-color: #ffffff;
+  width: 3.6rem;
+  height: 0.3rem;
+  margin-bottom: 0.7rem;
+}
+header .container .hamburger div:last-child {
+  margin-bottom: 0;
+}
+header .container .menu {
+  display: flex;
+  flex-direction: row;
+}
+header .container .menu a {
+  text-decoration: none;
+}
+header .container .menu a .item {
+  margin: 0 3rem;
+  color: #ffffff;
+  transition: all 0.2s linear;
+  width: 7rem;
+  height: 1rem;
+  text-align: right;
+  font-size: 1.1rem;
+}
+header .container .menu a .item:last-child {
+  margin-right: 0;
+}
+header .container .menu a .item:hover {
+  font-weight: 600;
+}
+header .container .menu a .active {
+  font-weight: 600;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 7.5rem;
+}
+.main-info .info {
+  width: 36%;
+  margin-right: 4%;
+}
+.main-info .info h2 {
+  color: #ffffff;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+.main-info .info p {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+  margin-bottom: 3rem;
+}
+.main-info .info a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.15rem;
+  transition: all 0.2s ease;
+}
+.main-info .info a span {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+.main-info .info a:hover i {
+  transform: scale(1.1);
+}
+.main-info .interior {
+  width: 60%;
+}
+.main-info .interior img {
+  width: 100%;
+  height: auto;
+}
+
+.creator {
+  width: 40%;
+  height: 15rem;
+  margin: 0 0 0 60%;
+  position: relative;
+  right: 5%;
+  top: -5rem;
+  padding-top: 1rem;
+  background-color: #181719;
+}
+.creator .profile-info {
+  display: flex;
+  flex-direction: row;
+  width: 88%;
+  margin: 0 auto;
+}
+.creator .profile-info .profile-pic {
+  width: 15%;
+}
+.creator .profile-info .profile-pic img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+.creator .profile-info .personal-info {
+  margin-left: 1rem;
+  align-self: center;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.creator .profile-info .personal-info h3 {
+  margin-bottom: 0.6rem;
+}
+.creator .profile-info .personal-info p {
+  color: #797979;
+}
+.creator .post {
+  width: 88%;
+  margin: 2rem auto 0 auto;
+}
+.creator .post p {
+  width: 60%;
+  color: #ffffff;
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+}
+
+footer {
+  margin-top: 1rem;
+}
+footer p {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1rem;
+  color: #a9a9a9;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+  }
+
+  .main-info {
+    margin-top: 6.5rem;
+  }
+
+  .creator .post p {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 870px) {
+  html {
+    font-size: 12px;
+  }
+
+  header .container .hamburger {
+    display: block;
+  }
+  header .container .menu {
+    display: none;
+  }
+
+  .main-info {
+    flex-direction: column;
+  }
+  .main-info .info {
+    width: 70%;
+    margin-bottom: 3rem;
+  }
+  .main-info .info a {
+    font-size: 1.5rem;
+  }
+  .main-info .interior {
+    width: 100%;
+  }
+
+  .creator {
+    width: 60%;
+    right: 30%;
+    box-shadow: 0px 15px 15px -10px rgba(0, 0, 0, 0.75);
+  }
+}
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 10px;
+  }
+
+  .main-info .info {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+
+  .creator {
+    width: 80%;
+    right: 45%;
+    height: 12rem;
+    margin-bottom: 7rem;
+  }
+  .creator .post {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 340px) {
+  html {
+    font-size: 7px;
+  }
+}
+@media screen and (max-width: 250px) {
+  html {
+    font-size: 6px;
+  }
+}

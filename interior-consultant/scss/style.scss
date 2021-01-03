@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,900;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
+@import "vars";
+@import "mixins";
+//@import "backgrounds";
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: $dark;
+    padding: 2.5rem 5rem;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    .header {
+        padding: .8rem;
+        border: 1px solid $light;
+
+        h1 {
+            @include font-settings ($light, $serif-font, $serif-light);
+            text-transform: uppercase
+        }
+    }
+
+    .container {
+        @include font-settings ($light, $sans-serif-font, $sans-serif-regular);
+        align-self: center;
+
+        .hamburger {
+            cursor: pointer;
+            display: none;
+            width: 3.6rem;
+            height: 2rem;
+            align-self: center;
+
+            div {
+                background-color: $light;
+                width: 3.6rem;
+                height: .3rem;
+                margin-bottom: .7rem;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        
+        .menu {
+            display: flex;
+            flex-direction: row;
+
+            a {
+                text-decoration: none;
+
+                .item {
+                    margin: 0 3rem;
+                    color: $light;
+                    transition: all .2s linear;
+                    width: 7rem;
+                    height: 1rem;
+                    text-align: right;
+                    font-size: 1.1rem;
+    
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    &:hover {
+                        font-weight: $sans-serif-semi-bold;
+                    }
+                }
+    
+                .active {
+                    font-weight: $sans-serif-semi-bold;
+                }
+            }
+        }
+    }
+}
+
+.main-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 7.5rem;
+
+    .info {
+        width: 36%;
+        margin-right: 4%;
+
+        h2 {
+            @include font-settings ($light, $serif-font, $serif-regular);
+            font-size: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        p {
+            @include font-settings ($light, $sans-serif-font, $sans-serif-light);
+            font-size: 1.5rem;
+            letter-spacing: .1rem;
+            line-height: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        a {
+            color: $light;
+            text-decoration: none;
+            font-size: 1.15rem;
+            transition: all .2s ease;
+
+            span {
+                @include font-settings($light, $sans-serif-font, $sans-serif-semi-bold);
+                margin-right: .5rem;
+            }
+
+            &:hover {
+                i {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    .interior {
+        width: 60%;
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.creator {
+    width: 40%;
+    height: 15rem;
+    margin: 0 0 0 60%;
+    position: relative;
+    right: 5%;
+    top: -5rem;
+    padding-top: 1rem;
+    background-color: $dark;
+
+    .profile-info {
+        display: flex;
+        flex-direction: row;
+        width: 88%;
+        margin: 0 auto;
+
+        .profile-pic {
+            width: 15%;
+            
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 50%;
+            }
+        }
+
+        .personal-info {
+            margin-left: 1rem;
+            align-self: center;
+            @include font-settings ($light, $sans-serif-font, $sans-serif-regular);
+
+            h3 {
+                margin-bottom: .6rem;
+            }
+
+            p {
+                color: #797979;
+            }
+        }
+    }
+
+    .post {
+        width: 88%;
+        margin: 2rem auto 0 auto; 
+        
+        p {
+            width: 60%;
+            @include font-settings ($light, $serif-font, $serif-black);
+            font-size: 1.5rem;
+            letter-spacing: .1rem;
+            line-height: 2rem;
+        }
+    }
+}
+
+footer {
+    margin-top: 1rem;
+
+    p {
+        @include font-settings ($light, $sans-serif-font, $sans-serif-semi-bold);
+        text-align: center;
+        font-size: 1rem;
+        color: #a9a9a9;
+    }
+}
+
+@import "responsive";
