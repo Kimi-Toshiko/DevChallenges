@@ -20,6 +20,33 @@
 //         }
 //     }
 // }
+// .main-info {
+//     background-color: blue;
+//     .info {
+//         background-color: brown;
+//         h2 {
+//             background-color: chartreuse;
+//         }
+//         p {
+//             background-color: chocolate;
+//         }
+//         a {
+//             background-color: crimson;
+//             span {
+//                 background-color: cyan;
+//             }
+//             i {
+//                 background-color: darkgoldenrod;
+//             }
+//         }
+//     }
+//     .interior {
+//         background-color: cadetblue;
+//         img {
+//             background-color: darkgreen;
+//         }
+//     }
+// }
 
 
 
@@ -70,6 +97,7 @@ header {
                     width: 7rem;
                     height: 1rem;
                     text-align: right;
+                    font-size: 1.1rem;
     
                     &:last-child {
                         margin-right: 0;
@@ -84,6 +112,50 @@ header {
                     font-weight: $sans-serif-semi-bold;
                 }
             }
+        }
+    }
+}
+
+.main-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 7.5rem;
+
+    .info {
+        width: 36%;
+        margin-right: 4%;
+
+        h2 {
+            color: $light;
+            font-family: $serif-font;
+            font-size: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        p {
+            font-family: $sans-serif-font;
+            color: $light;
+            font-weight: $sans-serif-light;
+            font-size: 1.5rem;
+            letter-spacing: .1rem;
+            line-height: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        a {
+            color: $light;
+            text-decoration: none;
+            font-size: 1.15rem;
+        }
+    }
+
+    .interior {
+        width: 60%;
+        
+        img {
+            width: 100%;
+            height: auto;
         }
     }
 }

@@ -41,6 +41,7 @@ header .container .menu a .item {
   width: 7rem;
   height: 1rem;
   text-align: right;
+  font-size: 1.1rem;
 }
 header .container .menu a .item:last-child {
   margin-right: 0;
@@ -50,4 +51,42 @@ header .container .menu a .item:hover {
 }
 header .container .menu a .active {
   font-weight: 600;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 7.5rem;
+}
+.main-info .info {
+  width: 36%;
+  margin-right: 4%;
+}
+.main-info .info h2 {
+  color: #ffffff;
+  font-family: "Merriweather", serif;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+.main-info .info p {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+  margin-bottom: 3rem;
+}
+.main-info .info a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.15rem;
+}
+.main-info .interior {
+  width: 60%;
+}
+.main-info .interior img {
+  width: 100%;
+  height: auto;
 }
