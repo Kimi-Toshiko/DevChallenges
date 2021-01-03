@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,900;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
+@import "vars";
+
+//BACKGROUND COLORS
+// header {
+//     background-color: aqua;
+//     .header {
+//         background-color: blanchedalmond;
+//         h1 {
+//             background-color: brown;
+//         }
+//     }
+//     .container {
+//         background-color: chocolate;
+//         .menu {
+//             background-color: cornflowerblue;
+//             .item {
+//                 background-color: crimson;
+//             }
+//         }
+//     }
+// }
+
+
+
+
+
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: $dark;
+    padding: 2.5rem 5rem;
+}
+
+header {
+    color: $light;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    .header {
+        padding: .8rem;
+        border: 1px solid $light;
+
+        h1 {
+            font-family: $serif-font;
+            font-weight: $serif-light;
+        }
+    }
+
+    .container {
+        font-family: $sans-serif-font;
+        font-weight: $sans-serif-regular;
+        align-self: center;
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+
+            a {
+                text-decoration: none;
+
+                .item {
+                    margin: 0 3rem;
+                    color: $light;
+                    transition: all .2s linear;
+                    width: 7rem;
+                    height: 1rem;
+                    text-align: right;
+    
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    &:hover {
+                        font-weight: $sans-serif-semi-bold;
+                    }
+                }
+    
+                .active {
+                    font-weight: $sans-serif-semi-bold;
+                }
+            }
+        }
+    }
+}

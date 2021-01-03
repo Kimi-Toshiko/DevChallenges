@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,900;1,400&family=Montserrat:wght@300;400;500;600&display=swap");
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #181719;
+  padding: 2.5rem 5rem;
+}
+
+header {
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header .header {
+  padding: 0.8rem;
+  border: 1px solid #ffffff;
+}
+header .header h1 {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+}
+header .container {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  align-self: center;
+}
+header .container .menu {
+  display: flex;
+  flex-direction: row;
+}
+header .container .menu a {
+  text-decoration: none;
+}
+header .container .menu a .item {
+  margin: 0 3rem;
+  color: #ffffff;
+  transition: all 0.2s linear;
+  width: 7rem;
+  height: 1rem;
+  text-align: right;
+}
+header .container .menu a .item:last-child {
+  margin-right: 0;
+}
+header .container .menu a .item:hover {
+  font-weight: 600;
+}
+header .container .menu a .active {
+  font-weight: 600;
+}
