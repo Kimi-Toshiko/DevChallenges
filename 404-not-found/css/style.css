@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap");
+html {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier Prime", monospace;
+}
+
+.whole-body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header h1 {
+  font-weight: bold;
+  margin-left: 3rem;
+  font-size: 1.2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  margin: 0 3rem;
+  height: 50%;
+}
+main .picture {
+  width: 50%;
+  height: auto;
+  align-self: center;
+}
+main .picture img {
+  width: 100%;
+  height: auto;
+}
+main .main-info {
+  margin-left: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .main-info h2 {
+  width: 100%;
+  font-size: 2.7rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+main .main-info p {
+  width: 70%;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+}
+main .main-info button {
+  font-family: inherit;
+  font-size: 1.25rem;
+  font-weight: bold;
+  width: 40%;
+  height: 4rem;
+  color: #fff;
+  border: none;
+  background-color: #333333;
+  transition: all 0.25s ease;
+}
+main .main-info button:hover {
+  background-color: #60588e;
+}
+
+footer {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1400px) {
+  main .picture {
+    width: auto;
+    height: 100%;
+  }
+  main .picture img {
+    height: 100%;
+    width: auto;
+  }
+  main .main-info {
+    margin-left: 5rem;
+  }
+}
+@media screen and (max-width: 1399px) and (min-width: 750px) {
+  html {
+    font-size: 14px;
+  }
+
+  main {
+    height: 40%;
+  }
+  main .picture {
+    width: 100%;
+    height: auto;
+  }
+  main .picture img {
+    width: 110%;
+    height: auto;
+  }
+  main .main-info p {
+    width: 80%;
+  }
+  main .main-info button {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 749px) {
+  html {
+    font-size: 10px;
+  }
+
+  .whole-body {
+    overflow: initial;
+    height: auto;
+    height: 100vh;
+  }
+
+  header h1 {
+    margin-left: 1rem;
+  }
+
+  main {
+    display: block;
+  }
+  main .picture {
+    width: auto;
+    height: 300px;
+    margin-top: -8rem;
+  }
+  main .picture img {
+    width: auto;
+    height: 82%;
+  }
+  main .main-info {
+    margin-left: 0;
+    margin-bottom: 3rem;
+  }
+  main .main-info p {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  main .main-info button {
+    margin-top: 2rem;
+    width: 55%;
+  }
+
+  footer {
+    height: 6rem;
+  }
+}
+@media screen and (max-width: 399px) {
+  html {
+    font-size: 8px;
+  }
+
+  .picture {
+    margin-top: -15rem;
+  }
+}

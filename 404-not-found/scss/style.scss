@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+html {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier Prime', monospace;
+}
+
+.whole-body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    h1 {
+        font-weight: bold;
+        margin-left: 3rem;
+        font-size: 1.2rem;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin: 0 3rem;
+    height: 50%;
+    
+    .picture {
+        width: 50%;
+        height: auto;
+        align-self: center;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .main-info {
+        margin-left: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h2 {
+            width: 100%;
+            font-size: 2.7rem;
+            font-weight: bold;
+            letter-spacing: 0.2rem;
+        }
+        p {
+            width: 70%;
+            font-size: 1.5rem;
+            letter-spacing: 0.1rem;
+            line-height: 2rem;
+        }
+        button {
+            font-family: inherit;
+            font-size: 1.25rem;
+            font-weight: bold;
+            width: 40%;
+            height: 4rem;
+            color: #fff;
+            border: none;
+            background-color: #333333;
+            transition: all 0.25s ease;
+            &:hover {
+                background-color: #60588e;
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+}
+
+@import 'responsive';
