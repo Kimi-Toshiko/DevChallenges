@@ -1,0 +1,75 @@
+@media screen and (min-width: 500px) {
+    @include card(32%, 47%)
+}
+
+@media screen and (min-width: 700px) {
+    html {
+        font-size: 14px;
+    }
+
+    header {
+        div {
+            h2 {
+                margin-bottom: .7rem;
+            }
+        }
+    }
+
+    @include card(32%, 36%);
+}
+
+@media screen and (min-width: 850px) {
+    @include card (33.5%, 37%);
+}
+
+@media screen and (min-width: 1200px) {
+    html {
+        font-size: 16px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 7rem;
+
+        h1 {
+            width: 50%;
+            align-self: center;
+        }
+
+        div {
+            width: 35%;
+        }
+    }
+
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);
+
+        .card:nth-child(2n) {
+            margin-top: 5rem;
+    
+            p {
+                top: 36%;
+            }
+        }
+    
+        .card:nth-child(5) {
+            margin-top: 10rem;
+    
+            p {
+                top: 36%;
+            }
+        }
+    
+        .card:nth-child(4), .card:nth-child(6) {
+            p {
+                top: 33%;
+            }
+        }
+    }
+
+    footer {
+        margin-top: 10rem;
+        margin-bottom: 2rem;
+    }
+}

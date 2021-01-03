@@ -1,0 +1,14 @@
+@mixin card ($ptop, $sntop) {
+    .card-container {
+        .card {
+            p {
+                top: $ptop;
+            }
+        }
+        .card:nth-child(2n) {
+            p {
+                top: $sntop;
+            }
+        }
+    }
+}
