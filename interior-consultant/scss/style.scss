@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,900;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
 @import "vars";
 @import "mixins";
-@import "backgrounds";
+//@import "backgrounds";
 
 html {
     font-size: 16px;
@@ -31,6 +31,25 @@ header {
         @include font-settings ($light, $sans-serif-font, $sans-serif-regular);
         align-self: center;
 
+        .hamburger {
+            cursor: pointer;
+            display: none;
+            width: 3.6rem;
+            height: 2rem;
+            align-self: center;
+
+            div {
+                background-color: $light;
+                width: 3.6rem;
+                height: .3rem;
+                margin-bottom: .7rem;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        
         .menu {
             display: flex;
             flex-direction: row;
@@ -92,6 +111,18 @@ header {
             color: $light;
             text-decoration: none;
             font-size: 1.15rem;
+            transition: all .2s ease;
+
+            span {
+                @include font-settings($light, $sans-serif-font, $sans-serif-semi-bold);
+                margin-right: .5rem;
+            }
+
+            &:hover {
+                i {
+                    transform: scale(1.1);
+                }
+            }
         }
     }
 

@@ -1,83 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,900;1,400&family=Montserrat:wght@300;400;500;600&display=swap");
-header {
-  background-color: aqua;
-}
-header .header {
-  background-color: blanchedalmond;
-}
-header .header h1 {
-  background-color: brown;
-}
-header .container {
-  background-color: chocolate;
-}
-header .container .menu {
-  background-color: cornflowerblue;
-}
-header .container .menu .item {
-  background-color: crimson;
-}
-
-.main-info {
-  background-color: blue;
-}
-.main-info .info {
-  background-color: brown;
-}
-.main-info .info h2 {
-  background-color: chartreuse;
-}
-.main-info .info p {
-  background-color: chocolate;
-}
-.main-info .info a {
-  background-color: crimson;
-}
-.main-info .info a span {
-  background-color: cyan;
-}
-.main-info .info a i {
-  background-color: darkgoldenrod;
-}
-.main-info .interior {
-  background-color: cadetblue;
-}
-.main-info .interior img {
-  background-color: darkgreen;
-}
-
-.creator {
-  background-color: darkolivegreen;
-}
-.creator .profile-info {
-  background-color: darkorange;
-}
-.creator .profile-info .profile-pic {
-  background-color: darkred;
-}
-.creator .profile-info .personal-info {
-  background-color: darksalmon;
-}
-.creator .profile-info .personal-info h3 {
-  background-color: darkseagreen;
-}
-.creator .profile-info .personal-info p {
-  background-color: darkslateblue;
-}
-.creator .post {
-  background-color: darkorchid;
-}
-.creator .post p {
-  background-color: darkslategray;
-}
-
-footer {
-  background-color: deeppink;
-}
-footer p {
-  background-color: deepskyblue;
-}
-
 html {
   font-size: 16px;
 }
@@ -107,6 +28,22 @@ header .container {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   align-self: center;
+}
+header .container .hamburger {
+  cursor: pointer;
+  display: none;
+  width: 3.6rem;
+  height: 2rem;
+  align-self: center;
+}
+header .container .hamburger div {
+  background-color: #ffffff;
+  width: 3.6rem;
+  height: 0.3rem;
+  margin-bottom: 0.7rem;
+}
+header .container .hamburger div:last-child {
+  margin-bottom: 0;
 }
 header .container .menu {
   display: flex;
@@ -164,6 +101,16 @@ header .container .menu a .active {
   color: #ffffff;
   text-decoration: none;
   font-size: 1.15rem;
+  transition: all 0.2s ease;
+}
+.main-info .info a span {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+.main-info .info a:hover i {
+  transform: scale(1.1);
 }
 .main-info .interior {
   width: 60%;
@@ -234,4 +181,57 @@ footer p {
   text-align: center;
   font-size: 1rem;
   color: #a9a9a9;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+  }
+
+  .main-info {
+    margin-top: 6.5rem;
+  }
+
+  .creator .post p {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 870px) {
+  html {
+    font-size: 12px;
+  }
+
+  header .container .hamburger {
+    display: block;
+  }
+  header .container .menu {
+    display: none;
+  }
+
+  .main-info {
+    flex-direction: column;
+  }
+  .main-info .info {
+    width: 70%;
+    margin-bottom: 3rem;
+  }
+  .main-info .info a {
+    font-size: 1.5rem;
+  }
+  .main-info .interior {
+    width: 100%;
+  }
+
+  .creator {
+    width: 60%;
+    right: 30%;
+    box-shadow: 0px 15px 15px -10px rgba(0, 0, 0, 0.75);
+  }
 }
