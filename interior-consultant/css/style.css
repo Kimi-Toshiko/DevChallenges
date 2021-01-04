@@ -44,9 +44,15 @@ header .container .hamburger div {
 }
 header .container .hamburger div:first-child {
   position: relative;
+  z-index: 200;
+}
+header .container .hamburger div:nth-child(2) {
+  position: relative;
+  z-index: 200;
 }
 header .container .hamburger div:last-child {
   position: relative;
+  z-index: 200;
   margin-bottom: 0;
 }
 header .container .menu {
@@ -129,6 +135,7 @@ header .container .menu a .active {
   height: 15rem;
   margin: 0 0 0 60%;
   position: relative;
+  z-index: 10;
   right: 5%;
   top: -5rem;
   padding-top: 1rem;
@@ -177,6 +184,7 @@ header .container .menu a .active {
 
 footer {
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 footer p {
   color: #ffffff;
@@ -216,7 +224,24 @@ footer p {
     display: block;
   }
   header .container .menu {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #181719;
+    z-index: 100;
+  }
+  header .container .menu a {
+    align-self: center;
+  }
+  header .container .menu a .item {
+    text-align: center;
+    margin: 5rem 0;
+    font-size: 2rem;
   }
 
   .main-info {
@@ -307,15 +332,31 @@ footer p {
     opacity: 0;
   }
 }
-.hamburger div:first-child {
-  animation: rotate-left 0.3s linear 0s 1 alternate none;
-  animation-fill-mode: forwards;
+@keyframes rotate-right-back {
+  0% {
+    transform: rotate(45deg);
+    bottom: 1rem;
+  }
+  100% {
+    transform: rotate(0deg);
+    bottom: 0rem;
+  }
 }
-.hamburger div:nth-child(2) {
-  animation: fade-out 0.2s linear 0s 1 alternate none;
-  animation-fill-mode: forwards;
+@keyframes rotate-left-back {
+  0% {
+    transform: rotate(-45deg);
+    top: 1rem;
+  }
+  100% {
+    transform: rotate(0deg);
+    top: 0rem;
+  }
 }
-.hamburger div:last-child {
-  animation: rotate-right 0.3s linear 0s 1 alternate none;
-  animation-fill-mode: forwards;
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

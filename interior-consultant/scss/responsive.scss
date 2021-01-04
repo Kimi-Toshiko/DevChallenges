@@ -36,7 +36,26 @@
             }
 
             .menu {
-                display: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100vw;
+                height: 100vh;
+                background-color: $dark;
+                z-index: 100;
+
+                a {
+                    align-self: center;
+
+                    .item {
+                        text-align: center;
+                        margin: 5rem 0;
+                        font-size: 2rem;
+                    }
+                }
             }
         }
     }

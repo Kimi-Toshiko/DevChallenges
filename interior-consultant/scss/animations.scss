@@ -29,21 +29,77 @@
     }
 }
 
-.hamburger {
-    div {
-        &:first-child {
-            animation: rotate-left .3s linear 0s 1 alternate none;
-            animation-fill-mode: forwards;
-        }
-
-        &:nth-child(2) {
-            animation: fade-out .2s linear 0s 1 alternate none;
-            animation-fill-mode: forwards;  
-        }
-
-        &:last-child {
-            animation: rotate-right .3s linear 0s 1 alternate none;
-            animation-fill-mode: forwards;
-        }
+@keyframes rotate-right-back {
+    0% {
+        transform: rotate(45deg);
+        bottom: 1rem;
+    }
+    100% {
+        transform: rotate(0deg);
+        bottom: 0rem;
     }
 }
+
+@keyframes rotate-left-back {
+    0% {
+        transform: rotate(-45deg);
+        top: 1rem;
+    }
+    100% {
+        transform: rotate(0deg);
+        top: 0rem;        
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+// OPEN HAMBURGER MENU
+// .hamburger {
+//     div {
+//         &:first-child {
+//             animation: rotate-left .5s linear 0s 1 alternate none;
+//             animation-fill-mode: forwards;
+//         }
+
+//         &:nth-child(2) {
+//             animation: fade-out .25s linear 0s 1 alternate none;
+//             animation-fill-mode: forwards;  
+//         }
+
+//         &:last-child {
+//             animation: rotate-right .5s linear 0s 1 alternate none;
+//             animation-fill-mode: forwards;
+//         }
+//     }
+// }
+// .menu {
+//     animation: fade-in .5s linear 0s 1 alternate none;
+//     animation-fill-mode: forwards;
+//     a {
+//         .item {
+//             animation: fade-in .7s linear 0s 1 alternate none;
+//             animation-fill-mode: forwards;
+//         }
+//     }
+// }
+// .creator {
+//     animation: fade-out .5s linear 0s 1 alternate none;
+//     animation-fill-mode: forwards;
+// }
+// footer {
+//     animation: fade-out .5s linear 0s 1 alternate none;
+//     animation-fill-mode: forwards;
+// }
