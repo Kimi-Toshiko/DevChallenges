@@ -1,0 +1,49 @@
+@keyframes rotate-right {
+    0% {
+        transform: rotate(0deg);
+        bottom: 0rem;
+    }
+    100% {
+        transform: rotate(45deg);
+        bottom: 1rem;
+    }
+}
+
+@keyframes rotate-left {
+    0% {
+        transform: rotate(0deg);
+        top: 0rem;
+    }
+    100% {
+        transform: rotate(-45deg);
+        top: 1rem;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.hamburger {
+    div {
+        &:first-child {
+            animation: rotate-left .3s linear 0s 1 alternate none;
+            animation-fill-mode: forwards;
+        }
+
+        &:nth-child(2) {
+            animation: fade-out .2s linear 0s 1 alternate none;
+            animation-fill-mode: forwards;  
+        }
+
+        &:last-child {
+            animation: rotate-right .3s linear 0s 1 alternate none;
+            animation-fill-mode: forwards;
+        }
+    }
+}

@@ -42,7 +42,11 @@ header .container .hamburger div {
   height: 0.3rem;
   margin-bottom: 0.7rem;
 }
+header .container .hamburger div:first-child {
+  position: relative;
+}
 header .container .hamburger div:last-child {
+  position: relative;
   margin-bottom: 0;
 }
 header .container .menu {
@@ -274,4 +278,44 @@ footer p {
   html {
     font-size: 6px;
   }
+}
+@keyframes rotate-right {
+  0% {
+    transform: rotate(0deg);
+    bottom: 0rem;
+  }
+  100% {
+    transform: rotate(45deg);
+    bottom: 1rem;
+  }
+}
+@keyframes rotate-left {
+  0% {
+    transform: rotate(0deg);
+    top: 0rem;
+  }
+  100% {
+    transform: rotate(-45deg);
+    top: 1rem;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.hamburger div:first-child {
+  animation: rotate-left 0.3s linear 0s 1 alternate none;
+  animation-fill-mode: forwards;
+}
+.hamburger div:nth-child(2) {
+  animation: fade-out 0.2s linear 0s 1 alternate none;
+  animation-fill-mode: forwards;
+}
+.hamburger div:last-child {
+  animation: rotate-right 0.3s linear 0s 1 alternate none;
+  animation-fill-mode: forwards;
 }

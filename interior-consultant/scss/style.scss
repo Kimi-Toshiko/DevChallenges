@@ -44,7 +44,12 @@ header {
                 height: .3rem;
                 margin-bottom: .7rem;
 
+                &:first-child {
+                    position: relative;
+                }
+
                 &:last-child {
+                    position: relative;
                     margin-bottom: 0;
                 }
             }
@@ -203,3 +208,4 @@ footer {
 }
 
 @import "responsive";
+@import "animations";
