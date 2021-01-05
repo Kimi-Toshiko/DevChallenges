@@ -44,7 +44,19 @@ header {
                 height: .3rem;
                 margin-bottom: .7rem;
 
+                &:first-child {
+                    position: relative;
+                    z-index: 200;
+                }
+
+                &:nth-child(2) {
+                    position: relative;
+                    z-index: 200;
+                }
+
                 &:last-child {
+                    position: relative;
+                    z-index: 200;
                     margin-bottom: 0;
                 }
             }
@@ -141,6 +153,7 @@ header {
     height: 15rem;
     margin: 0 0 0 60%;
     position: relative;
+    z-index: 10;
     right: 5%;
     top: -5rem;
     padding-top: 1rem;
@@ -193,6 +206,7 @@ header {
 
 footer {
     margin-top: 1rem;
+    margin-bottom: 1rem;
 
     p {
         @include font-settings ($light, $sans-serif-font, $sans-serif-semi-bold);
@@ -203,3 +217,4 @@ footer {
 }
 
 @import "responsive";
+@import "animations";
