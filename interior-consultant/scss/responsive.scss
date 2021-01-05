@@ -36,7 +36,8 @@
             }
 
             .menu {
-                display: flex;
+                display: none;
+                overflow: hidden;
                 flex-direction: column;
                 justify-content: center;
                 position: absolute;
