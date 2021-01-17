@@ -1,1 +1,184 @@
 @import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Inter:wght@200;400;700&display=swap");
+header {
+  background-color: antiquewhite;
+}
+header h1 {
+  background-color: aqua;
+}
+header .description {
+  background-color: aquamarine;
+}
+header .description .dots {
+  background-color: azure;
+}
+header .description p {
+  background-color: beige;
+}
+header .recipe-img {
+  background-color: bisque;
+}
+
+main {
+  background-color: blanchedalmond;
+}
+main .info {
+  background-color: brown;
+}
+main .info div {
+  background-color: burlywood;
+}
+main .info div i {
+  background-color: cadetblue;
+}
+main .info div div {
+  background-color: chartreuse;
+}
+main .info div div .property {
+  background-color: chocolate;
+}
+main .info div div .value {
+  background-color: coral;
+}
+main .ingredients {
+  background-color: cornflowerblue;
+}
+main .ingredients h2 {
+  background-color: cornsilk;
+}
+main .ingredients .cracker, main .ingredients .cheesecake {
+  background-color: crimson;
+}
+main .ingredients .cracker h3, main .ingredients .cheesecake h3 {
+  background-color: cyan;
+}
+main .ingredients .cracker form, main .ingredients .cheesecake form {
+  background-color: darkcyan;
+}
+main .ingredients .cracker form input, main .ingredients .cheesecake form input {
+  background-color: darkgoldenrod;
+}
+main .ingredients .cracker form label, main .ingredients .cheesecake form label {
+  background-color: darkgray;
+}
+main .ingredients .cracker form label strong, main .ingredients .cheesecake form label strong {
+  background-color: darksalmon;
+}
+main .instructions {
+  background-color: darkgreen;
+}
+main .instructions ol {
+  background-color: darkgrey;
+}
+main .instructions ol li {
+  background-color: darkkhaki;
+}
+main .instructions ol li strong {
+  background-color: darkmagenta;
+}
+main .source {
+  background-color: darkolivegreen;
+}
+main .source p {
+  background-color: darkorange;
+}
+
+footer {
+  background-color: darkorchid;
+}
+footer p {
+  background-color: darkred;
+}
+
+body {
+  width: 92%;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 3rem;
+  font-family: "Domine", serif;
+}
+header h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+header .description {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.5rem;
+}
+header .description img {
+  align-self: flex-start;
+}
+header .description p {
+  margin-left: 1rem;
+  color: #4f4f4f;
+}
+header .recipe-img {
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+}
+
+.info {
+  margin-top: 1.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 2rem;
+}
+.info div {
+  display: flex;
+  flex-direction: row;
+}
+.info div:first-child {
+  grid-column: 1/4;
+}
+.info div i {
+  color: #4f4f4f;
+}
+.info div div {
+  display: block;
+}
+.info div div .property {
+  text-transform: uppercase;
+  color: #bdbdbd;
+}
+.info div div .values {
+  color: #4f4f4f;
+}
+
+@media screen and (max-width: 2000px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 380px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 340px) {
+  html {
+    font-size: 7px;
+  }
+}
+@media screen and (max-width: 250px) {
+  html {
+    font-size: 6px;
+  }
+}

@@ -1,0 +1,40 @@
+header {
+  background-color: antiquewhite;
+}
+header h1 {
+  background-color: aqua;
+}
+header .description {
+  background-color: aquamarine;
+}
+header .description .dots {
+  background-color: azure;
+}
+header .description p {
+  background-color: beige;
+}
+header .recipe-img {
+  background-color: bisque;
+}
+
+main {
+  background-color: blanchedalmond;
+}
+main .info {
+  background-color: brown;
+}
+main .info div {
+  background-color: burlywood;
+}
+main .info div i {
+  background-color: cadetblue;
+}
+main .info div div {
+  background-color: chartreuse;
+}
+main .info div div .property {
+  background-color: chocolate;
+}
+main .info div div .value {
+  background-color: coral;
+}

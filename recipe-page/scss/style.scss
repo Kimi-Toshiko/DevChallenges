@@ -1,2 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Inter:wght@200;400;700&display=swap');
+@import "vars";
+@import "backgrounds";
 
+
+body {
+    width: 92%;
+    margin: 0 auto;
+}
+
+header {
+    margin-top: 3rem;
+    font-family: $serif;
+
+    h1 {
+        font-weight: $serif-bold;
+        font-size: 3rem;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1.5rem;
+
+        img {
+            align-self: flex-start;
+        }
+
+        p {
+            margin-left: 1rem;
+            color: $dark-gray
+        }
+    }
+
+    .recipe-img {
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+    }
+}
+
+.info {
+    margin-top: 1.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2rem;
+
+    div {
+        display: flex;
+        flex-direction: row;
+
+        &:first-child {
+            grid-column: 1 / 4;
+        }
+
+        i {
+            color: $dark-gray;
+        }
+
+        div {
+            display: block;
+
+            .property {
+                text-transform: uppercase;
+                color: $light-gray
+            }
+            
+            .values {
+                color: $dark-gray;
+            }
+        }
+    }
+}
+
+
+@import "responsive";

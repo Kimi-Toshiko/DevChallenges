@@ -1,0 +1,87 @@
+header {
+    background-color: antiquewhite;
+    h1 {
+        background-color: aqua;
+    }
+    .description {
+        background-color: aquamarine;
+        .dots {
+            background-color: azure;
+        }
+        p {
+            background-color: beige;
+        }
+    }
+    .recipe-img {
+        background-color: bisque;
+    }
+}
+main {
+    background-color: blanchedalmond;
+    .info {
+        background-color: brown;
+        div {
+            background-color: burlywood;
+            i {
+                background-color: cadetblue;
+            }
+            div {
+                background-color: chartreuse;
+                .property {
+                    background-color: chocolate;
+                }
+                .value {
+                    background-color: coral;
+                }
+            }
+        }
+    }
+    .ingredients {
+        background-color: cornflowerblue;
+        h2 {
+            background-color: cornsilk;
+        }
+        .cracker, .cheesecake {
+            background-color: crimson;
+            h3 {
+                background-color: cyan;
+            }
+            form {
+                background-color: darkcyan;
+                input {
+                    background-color: darkgoldenrod;
+                }
+                label {
+                    background-color: darkgray;
+                    strong {
+                        background-color: darksalmon;
+                    }
+                }
+            }
+        }
+    }
+    .instructions {
+        background-color: darkgreen;
+        ol {
+            background-color: darkgrey;
+            li {
+                background-color: darkkhaki;
+                strong {
+                    background-color: darkmagenta;
+                }
+            }
+        }
+    }
+    .source {
+        background-color: darkolivegreen;
+        p {
+            background-color: darkorange;
+        }
+    }
+}
+footer {
+    background-color: darkorchid;
+    p {
+        background-color: darkred;
+    }
+}
